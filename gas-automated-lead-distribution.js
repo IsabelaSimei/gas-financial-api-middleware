@@ -20,7 +20,7 @@ function crearActivadorDiario() {
   dias.forEach(dia => {
     ScriptApp.newTrigger('procesarLeadsDiarios')
       .timeBased()
-      .inTimezone("America/El_Salvador")
+      .inTimezone("America/Brasilia")
       .onWeekDay(dia)
       .atHour(7)
       .nearMinute(30)
@@ -42,15 +42,15 @@ function asignarAgenciasAuto() {
   const IDX_DIRECCION = 21;  
 
   const correosGerentes = {
-    "Zona Central": "gerente.central@company.com",
-    "Zona Norte": "gerente.norte@company.com",
-    "Zona Sul": "gerente.sul@company.com"
+    "Zona X": "gerente.x@company.com",
+    "Zona A": "gerente.a@company.com",
+    "Zona J": "gerente.j@company.com"
   };
 
   const mapaDirecciones = [
-    { keyword: "centro", agencia: "Zona Central" },
-    { keyword: "norte", agencia: "Zona Norte" },
-    { keyword: "sul", agencia: "Zona Sul" }
+    { keyword: "x", agencia: "Zona X" },
+    { keyword: "a", agencia: "Zona A" },
+    { keyword: "j", agencia: "Zona J" }
   ];
 
   let totalActualizados = 0;
