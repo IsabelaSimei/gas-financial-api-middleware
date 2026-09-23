@@ -1,5 +1,5 @@
 // URL base da API e Header de Autenticação (Basic Auth em Base64)
-var API_BASE_URL = "https://api.yourdomain.com/api/ChatBox";
+var API_BASE_URL = "SUA API";
 var AUTH_HEADER  = "Basic YOUR_BASE64_AUTH_HEADER_HERE"; 
 
 function doPost(e) {
